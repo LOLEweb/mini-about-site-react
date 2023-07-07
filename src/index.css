@@ -1,13 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-size: 32px;
+    font-weight: 650;
+    color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+    z-index: 100000;
+    height: 80px;
+}
+
+.sidebar {
+    transition: width .5s ease-in,background-color .5s ease-in,top .5s ease-in,border-bottom .5s ease-in;
+    overflow-x: hidden;
+
+    z-index: 1000000;
+    position: fixed;
+    top: 81px;
+    height: calc(100% - 80px);
+    padding: 80px 0;
+}
+
+.main__image {
+    width: 280px;
+}
+
+.circle {
+    background-color: rgb(126, 126, 126);;
+    width: 55px;
+    height: 55px;
+    transition: border .5s ease-in,background-color .5s ease-in;
+    border-radius: 50%;
+    border: 10px solid #232323;
+}
+
+.circle__pos {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    color: #7e7e7e;
+}
+
+.blue {
+    cursor: pointer;
+    color: #2f6ada;
+}
+
+.red {
+    cursor: pointer;
+    color: red;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .main__image {
+        width: 236px;
+    }
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+    .circle__pos {
+        right: 10px;
+        bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 743px) {
+    body {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 581px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .main__image {
+        width: 200px;
+    }
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+    .circle__pos {
+        right: 10px;
+        bottom: 8px;
+    }
 }
