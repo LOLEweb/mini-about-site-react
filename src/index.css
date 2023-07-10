@@ -77,6 +77,14 @@ p {
     z-index: 45;
 }
 
+.about__modal-close {
+    visibility: hidden;
+}
+
+.about__modal-open {
+    visibility: visible;
+}
+
 .about__modal_padding {
     height: 100%;
     padding: 20px 15px;
@@ -110,6 +118,12 @@ p {
     .circle__pos {
         right: 10px;
         bottom: 8px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .about__modal {
+        left: 30vw;
     }
 }
 

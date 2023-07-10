@@ -22,7 +22,7 @@ const Main = () => {
                 <div className="circle circle__pos"></div>
             </div>
             <h1>diziSXD</h1>
-            <p>Strive not for <span className="text-white cursor-pointer">su</span><span className="blue">cc</span><span className="red">ess</span>, but for the values it gives.</p>
+            <p>Strive not for <span className="text-yellow-500">succes</span>, but for the values it gives.</p>
         </div>
     );
 };
